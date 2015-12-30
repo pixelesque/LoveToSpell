@@ -11,12 +11,19 @@ import UIKit
 class WriteViewController: UIViewController {
 
     var exercise = ""
+    var fliteController: OEFliteController = OEFliteController()
+    var slt: Slt = Slt()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print("Exercise \(exercise)")
+        fliteController.say("d", withVoice: slt)
+        fliteController.say("o", withVoice: slt)
+        fliteController.say("g", withVoice: slt)
+       
+        
     }
 
     override func didReceiveMemoryWarning() {
