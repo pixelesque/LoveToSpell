@@ -263,7 +263,6 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framework",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LoveToSpell/Info.plist;
@@ -285,7 +284,6 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framework",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LoveToSpell/Info.plist;
