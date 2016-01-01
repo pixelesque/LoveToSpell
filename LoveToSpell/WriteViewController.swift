@@ -7,23 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
 class WriteViewController: UIViewController {
 
     var exercise = ""
-    var fliteController: OEFliteController = OEFliteController()
-    var slt: Slt = Slt()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print("Exercise \(exercise)")
-        fliteController.say("d", withVoice: slt)
-        fliteController.say("o", withVoice: slt)
-        fliteController.say("g", withVoice: slt)
-       
-        
+        let synth = AVSpeechSynthesizer()
+        var myUtterance = AVSpeechUtterance(string: "Alice was getting very tired of sitting beside her sister on the bank, and having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, and what is the use of a book, thought Alice, without pictures or conversations?")
+        myUtterance.rate = 0.5
+        synth.speakUtterance(myUtterance)
     }
 
     override func didReceiveMemoryWarning() {
