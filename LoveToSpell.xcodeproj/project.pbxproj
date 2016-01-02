@@ -15,6 +15,7 @@
 		12E608811C32429B002D9F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E6087F1C32429B002D9F11 /* LaunchScreen.storyboard */; };
 		12E608891C327D90002D9F11 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E608881C327D90002D9F11 /* WriteViewController.swift */; };
 		94A27D5D1C378CFD00663AE9 /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A27D5C1C378CFD00663AE9 /* green_button.png */; };
+		94A27D5E1C378ED700663AE9 /* DNBlock 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A27D551C37814C00663AE9 /* DNBlock 2.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A27D5E1C378ED700663AE9 /* DNBlock 2.ttf in Resources */,
 				12E608811C32429B002D9F11 /* LaunchScreen.storyboard in Resources */,
 				12E6087E1C32429B002D9F11 /* Assets.xcassets in Resources */,
 				12E6087C1C32429B002D9F11 /* Main.storyboard in Resources */,
