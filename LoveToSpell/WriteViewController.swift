@@ -19,7 +19,7 @@ class WriteViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("Exercise \(exercise)")
         let synth = AVSpeechSynthesizer()
-        var myUtterance = AVSpeechUtterance(string: "dog")
+        var myUtterance = AVSpeechUtterance(string: "T")
         myUtterance.rate = 0.1
         synth.speakUtterance(myUtterance)
     }
