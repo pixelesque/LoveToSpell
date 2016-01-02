@@ -3,7 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>a</key>
-	<array/>
+	<array>
+		<dict>
+			<key>spelling</key>
+			<string>cab</string>
+			<key>phonemes</key>
+			<string>k_AE_b</string>
+		</dict>
+        <dict>
+            <key>spelling</key>
+            <string>lab</string>
+            <key>phonemes</key>
+            <string>l_AE_b</string>
+        </dict>
+	</array>
 	<key>e</key>
 	<array/>
 	<key>i</key>
