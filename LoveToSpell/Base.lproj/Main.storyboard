@@ -18,21 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUL-Xm-uBg">
-                                <rect key="frame" x="20" y="72" width="68" height="30"/>
-                                <state key="normal" title="Exercise 1"/>
+                                <rect key="frame" x="20" y="105" width="134" height="60"/>
+                                <state key="normal" title="Short Vowels" backgroundImage="green_button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex1Segue" id="5Jb-VG-6tp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-BQ-eZO">
-                                <rect key="frame" x="123" y="72" width="70" height="30"/>
-                                <state key="normal" title="Exercise 2"/>
+                                <rect key="frame" x="203" y="105" width="134" height="60"/>
+                                <state key="normal" title="Long Vowels" backgroundImage="green_button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex2Segue" id="TAY-4I-1gx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83402336025056112" green="0.97932507571777017" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="XM7-xt-one"/>
                 </viewController>
@@ -78,6 +82,9 @@
             <point key="canvasLocation" x="471" y="527"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="green_button.png" width="743" height="338"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="TAY-4I-1gx"/>
     </inferredMetricsTieBreakers>
