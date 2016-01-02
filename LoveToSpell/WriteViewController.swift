@@ -20,7 +20,7 @@ class WriteViewController: UIViewController {
         print("Exercise \(exercise)")
         let synth = AVSpeechSynthesizer()
         var myUtterance = AVSpeechUtterance(string: "dog")
-        myUtterance.rate = 0.0
+        myUtterance.rate = 0.1
         synth.speakUtterance(myUtterance)
     }
 
