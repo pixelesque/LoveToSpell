@@ -22,25 +22,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UUL-Xm-uBg">
-                                <rect key="frame" x="20" y="105" width="112" height="99"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title=" Short Vowels" backgroundImage="green_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex1Segue" id="5Jb-VG-6tp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-BQ-eZO">
-                                <rect key="frame" x="187" y="105" width="113" height="99"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="267" y="70" width="140" height="134"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title=" Long Vowels" backgroundImage="green_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex2Segue" id="TAY-4I-1gx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UUL-Xm-uBg">
+                                <rect key="frame" x="30" y="70" width="137" height="134"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title=" Short Vowels" backgroundImage="green_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex1Segue" id="5Jb-VG-6tp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="1283" y="527"/>
         </scene>
-        <!--Write View Controller-->
+        <!--Title-->
         <scene sceneID="ian-UZ-tz5">
             <objects>
                 <viewController id="KbH-x5-Vn7" customClass="WriteViewController" customModule="LoveToSpell" sceneMemberID="viewController">
@@ -74,7 +74,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xvo-Pm-Hii"/>
+                    <navigationItem key="navigationItem" title="Title" id="Gr3-0n-BZP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLj-eP-4cC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +104,6 @@
         <image name="green_button.png" width="643" height="292"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TAY-4I-1gx"/>
+        <segue reference="5Jb-VG-6tp"/>
     </inferredMetricsTieBreakers>
 </document>
