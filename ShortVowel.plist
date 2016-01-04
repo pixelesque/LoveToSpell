@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>menu</key>
+	<array>
+		<string>a</string>
+		<string>e</string>
+		<string>i</string>
+		<string>o</string>
+		<string>u</string>
+		<string>Digraphs</string>
+		<string>Blends</string>
+		<string>Mega Mix</string>
+	</array>
 	<key>a</key>
 	<array>
 		<dict>
@@ -10,12 +21,12 @@
 			<key>phonemes</key>
 			<string>k_AE_b</string>
 		</dict>
-        <dict>
-            <key>spelling</key>
-            <string>lab</string>
-            <key>phonemes</key>
-            <string>l_AE_b</string>
-        </dict>
+		<dict>
+			<key>spelling</key>
+			<string>lab</string>
+			<key>phonemes</key>
+			<string>l_AE_b</string>
+		</dict>
 	</array>
 	<key>e</key>
 	<array/>

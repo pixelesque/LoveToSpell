@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +31,9 @@ class MainViewController: UIViewController {
         if let destinationVC = segue.destinationViewController as? WriteViewController{
             destinationVC.exercise = String(segue.identifier)
         }
+    }
+    
+    @IBAction func goHome(segue:UIStoryboardSegue) {
     }
 }
 

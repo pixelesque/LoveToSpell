@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x8W-dM-rDX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x8W-dM-rDX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -36,7 +36,7 @@
                                 <rect key="frame" x="187" y="105" width="118" height="99"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title=" Long Vowels" backgroundImage="green_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex2Segue" id="TAY-4I-1gx"/>
@@ -64,18 +64,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APz-67-Ogy">
-                                <rect key="frame" x="178" y="235" width="244" height="113"/>
-                                <fontDescription key="fontDescription" name="DNBlock" family="DNBlock" pointSize="72"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoh-2C-t1l">
+                                <rect key="frame" x="20" y="8" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="OzW-1u-AnS" kind="unwind" unwindAction="goHome:" id="Lr1-h1-Ugb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNj-PK-2kU">
+                                <rect key="frame" x="550" y="8" width="30" height="30"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="skipPhase:" destination="KbH-x5-Vn7" eventType="touchUpInside" id="034-9C-Gp6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APz-67-Ogy">
+                                <rect key="frame" x="48" y="186" width="505" height="394"/>
+                                <fontDescription key="fontDescription" name="DNBlock" family="DNBlock" pointSize="300"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.44797328437698508" green="0.85511363636363635" blue="0.83925344419390091" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" adjustable="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="APz-67-Ogy" firstAttribute="centerX" secondItem="XJ7-UH-42a" secondAttribute="centerX" id="VNw-ZC-QR2"/>
+                            <constraint firstAttribute="trailing" secondItem="dNj-PK-2kU" secondAttribute="trailing" constant="20" symbolic="YES" id="eon-wY-5Sn"/>
+                            <constraint firstItem="dNj-PK-2kU" firstAttribute="top" secondItem="Qzx-2t-Drd" secondAttribute="bottom" constant="8" symbolic="YES" id="m4q-BA-QmE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xvo-Pm-Hii"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLj-eP-4cC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OzW-1u-AnS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1947" y="535"/>
         </scene>
