@@ -27,10 +27,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title=" Short Vowels" backgroundImage="green_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex1Segue" id="5Jb-VG-6tp"/>
+                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="ShortVowelSegue" id="5Jb-VG-6tp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-BQ-eZO">
@@ -40,7 +40,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex2Segue" id="TAY-4I-1gx"/>
+                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="LongVowelSegue" id="TAY-4I-1gx"/>
                                 </connections>
                             </button>
                         </subviews>

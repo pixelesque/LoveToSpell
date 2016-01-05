@@ -33,12 +33,24 @@ class WriteViewController: UIViewController {
 
     var exercise = ""
     var segmentedControl:UISegmentedControl!
+    var menuItems = [AnyObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("Exercise \(exercise)")
+        
+        // Load the appropriate data dictionary for this segue
+        let dataFileName = exercise + ".plist"
+        let dataPath = "\(NSBundle.mainBundle().resourcePath!)/\(dataFileName)"
+        let dataDictionary: NSDictionary? = NSDictionary(contentsOfFile: dataPath)
+        assert(dataDictionary != nil, "Level configuration file not found")
+        
+        // Get menu items
+        menuItems = dataDictionary!["menu"] as! [NSArray]
+
         // Do any additional setup after loading the view.
-        segmentedControl = UISegmentedControl (items: ["a", "e", "i", "o", "u", "Digraphs", "Blends", "Mega Mix"])
+        segmentedControl = UISegmentedControl (items: menuItems)
         segmentedControl.frame = CGRectMake(60, 250,600, 40)
         segmentedControl.center = CGPointMake(UIScreen.mainScreen().bounds.size.width/2, 50)
         segmentedControl.selectedSegmentIndex = 0
@@ -47,7 +59,6 @@ class WriteViewController: UIViewController {
         segmentedControl.setFontSize(20)
         self.view.addSubview(segmentedControl)
 
-        print("Exercise \(exercise)")
         let synth = AVSpeechSynthesizer()
         let myUtterance = AVSpeechUtterance(string: "dog")
         myUtterance.rate = 0.1
@@ -78,15 +89,15 @@ class WriteViewController: UIViewController {
     @IBAction func segmentedControlAction(sender: AnyObject) {
         if(segmentedControl.selectedSegmentIndex == 0)
         {
-            print("First Segment Selected")
+            print("First Segment Selected: \(menuItems[segmentedControl.selectedSegmentIndex])")
         }
         else if(segmentedControl.selectedSegmentIndex == 1)
         {
-            print("Second Segment Selected")
+            print("Second Segment Selected: \(menuItems[segmentedControl.selectedSegmentIndex])")
         }
         else if(segmentedControl.selectedSegmentIndex == 2)
         {
-            print("Third Segment Selected")
+            print("Third Segment Selected: \(menuItems[segmentedControl.selectedSegmentIndex])")
         }
     }
     
