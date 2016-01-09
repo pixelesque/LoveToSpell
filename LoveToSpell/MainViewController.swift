@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Foundation
 
 class MainViewController: UIViewController {
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,11 +27,15 @@ class MainViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
         if let destinationVC = segue.destinationViewController as? WriteViewController{
-            destinationVC.exercise = String(segue.identifier)
+            let exercise = String(segue.identifier!).stringByReplacingOccurrencesOfString("Segue", withString: "")
+            destinationVC.exercise = exercise
         }
+    }
+    
+    @IBAction func goHome(segue:UIStoryboardSegue) {
     }
 }
 
