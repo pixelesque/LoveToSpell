@@ -22,18 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-BQ-eZO">
-                                <rect key="frame" x="267" y="70" width="140" height="134"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
-                                <state key="normal" title=" Long Vowels" backgroundImage="green_button.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex2Segue" id="TAY-4I-1gx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UUL-Xm-uBg">
-                                <rect key="frame" x="30" y="70" width="137" height="134"/>
+                                <rect key="frame" x="28" y="70" width="137" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title=" Short Vowels" backgroundImage="green_button.png">
@@ -43,8 +33,18 @@
                                     <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex1Segue" id="5Jb-VG-6tp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-BQ-eZO">
+                                <rect key="frame" x="236" y="70" width="140" height="134"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <state key="normal" title=" Long Vowels" backgroundImage="green_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KbH-x5-Vn7" kind="show" identifier="Ex2Segue" id="TAY-4I-1gx"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.028838043799790936" green="0.99438461991253768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1231097795" green="0.77953206809999998" blue="0.77806253039999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="XM7-xt-one"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -66,19 +66,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APz-67-Ogy">
-                                <rect key="frame" x="178" y="235" width="244" height="113"/>
-                                <fontDescription key="fontDescription" name="DNBlock" family="DNBlock" pointSize="72"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="168" y="174" width="244" height="195"/>
+                                <fontDescription key="fontDescription" name="DNBlock" family="DNBlock" pointSize="146"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tT7-JH-3Ah">
+                                <rect key="frame" x="34" y="14" width="34" height="30"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Cwc-9o-LU2"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1231097795" green="0.77953206809999998" blue="0.77806253039999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Gr3-0n-BZP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLj-eP-4cC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947" y="535"/>
+            <point key="canvasLocation" x="1969" y="527"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oAy-Mr-fl1">
@@ -104,6 +114,7 @@
         <image name="green_button.png" width="643" height="292"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Cwc-9o-LU2"/>
         <segue reference="5Jb-VG-6tp"/>
     </inferredMetricsTieBreakers>
 </document>
