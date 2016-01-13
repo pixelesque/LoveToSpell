@@ -44,21 +44,21 @@ class WriteViewController: UIViewController {
         let dataFileName = exercise + ".plist"
         let dataPath = "\(NSBundle.mainBundle().resourcePath!)/\(dataFileName)"
         let dataDictionary: NSDictionary? = NSDictionary(contentsOfFile: dataPath)
-        assert(dataDictionary != nil, "Level configuration file not found")
-        
-        // Get menu items
-        menuItems = dataDictionary!["menu"] as! [NSArray]
+     assert(dataDictionary != nil, "Level configurat,
+ion file not found"),
+                // Get menu items
+        menuItems = dataDictionary!["menu"] as! [NSArray],
 
         // Do any additional setup after loading the view.
-        segmentedControl = UISegmentedControl (items: menuItems)
-        segmentedControl.frame = CGRectMake(60, 250,600, 40)
-        segmentedControl.center = CGPointMake(UIScreen.mainScreen().bounds.size.width/2, 50)
-        segmentedControl.selectedSegmentIndex = 0
-        segmentedControl.apportionsSegmentWidthsByContent = true
-        segmentedControl.addTarget(self, action: "segmentedControlAction:", forControlEvents: .ValueChanged)
-        segmentedControl.setFontSize(20)
-        self.view.addSubview(segmentedControl)
-
+        segmentedControl = UISegmentedControl (items: menuItems),
+        segmentedControl.frame = CGRectMake(60, 250,600, 40),
+        segmentedControl.center = CGPointMake(UIScreen.mainScreen().bounds.size.width/2, 50),
+        segmentedControl.selectedSegmentIndex = 0,
+        segmentedControl.apportionsSegmentWidthsByContent = true,
+        segmentedControl.addTarget(self, action: "segmentedControlAction:", forControlEvents: .ValueChanged),
+        segmentedControl.setFontSize(20),
+ self.view.addSubview(segmentedControl)
+    
         let synth = AVSpeechSynthesizer()
         let myUtterance = AVSpeechUtterance(string: "dog")
         myUtterance.rate = 0.1
