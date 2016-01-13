@@ -74,10 +74,10 @@ ion file not found"),
         return true
     }
     
-    @IBAction func skipPhase(sender: AnyObject) {
-        print("Skip Phase pressed")
-    }
+    @IBAction func skipPhase(sender: AnyObject) {    }
     /*
+        print("Skip Phase pressed")
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
