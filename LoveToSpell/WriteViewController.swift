@@ -19,8 +19,7 @@ extension UISegmentedControl {
         ]
         
         let boldTextAttributes: [NSObject : AnyObject] = [
-            NSForegroundColorAttributeName : UIColor.whiteColor(),
-            NSFontAttributeName : UIFont.systemFontOfSize(fontSize, weight: UIFontWeightMedium),
+            NSForegroundColorAttributeName : UIColor.whiteColor(),            NSFontAttributeName : UIFont.systemFontOfSize(fontSize, weight: UIFontWeightMedium),
         ]
         
         self.setTitleTextAttributes(normalTextAttributes, forState: .Normal)
